@@ -1,0 +1,40 @@
+import personaImage from '../assets/hero.png';
+
+export const personas = [
+  {
+    id: 'anshuman',
+    name: 'Anshuman Singh',
+    role: 'Scaler Co-founder, ex-Uber',
+    tagline: 'Calm authority, real hiring insight.',
+    greeting: 'Tell me your goal and constraints. I will help you plan the next step.',
+    accent: '#1d4ed8',
+    accentSoft: 'rgba(29, 78, 216, 0.12)',
+    cardTone: 'linear-gradient(135deg, rgba(29, 78, 216, 0.16), rgba(59, 130, 246, 0.2))',
+    glow: 'radial-gradient(circle at 30% 30%, rgba(29, 78, 216, 0.24), transparent 60%)',
+    avatar: personaImage,
+  },
+  {
+    id: 'abhimanyu',
+    name: 'Abhimanyu Saxena',
+    role: 'Scaler Co-founder, IIT Delhi',
+    tagline: 'High energy, systems thinking.',
+    greeting: 'Share your target and timeline. I will structure a plan with feedback loops.',
+    accent: '#be123c',
+    accentSoft: 'rgba(190, 18, 60, 0.12)',
+    cardTone: 'linear-gradient(135deg, rgba(190, 18, 60, 0.18), rgba(248, 113, 113, 0.2))',
+    glow: 'radial-gradient(circle at 70% 30%, rgba(190, 18, 60, 0.24), transparent 60%)',
+    avatar: personaImage,
+  },
+  {
+    id: 'kshitij',
+    name: 'Kshitij Mishra',
+    role: 'Scaler Educator',
+    tagline: 'Warm, patient, analogy-driven.',
+    greeting: 'Tell me what is confusing. I will explain it with a simple model.',
+    accent: '#0f766e',
+    accentSoft: 'rgba(15, 118, 110, 0.12)',
+    cardTone: 'linear-gradient(135deg, rgba(15, 118, 110, 0.18), rgba(52, 211, 153, 0.2))',
+    glow: 'radial-gradient(circle at 50% 20%, rgba(15, 118, 110, 0.26), transparent 60%)',
+    avatar: personaImage,
+  },
+];
