@@ -6,6 +6,7 @@ function useChatComposer(personaId) {
   const setTyping = useChatStore((state) => state.setTyping);
   const messagesByPersona = useChatStore((state) => state.messagesByPersona);
   const [value, setValue] = useState('');
+  const apiBaseUrl = (import.meta.env.VITE_API_BASE_URL || '').replace(/\/$/, '');
 
   useEffect(() => {
     setValue('');
@@ -35,7 +36,7 @@ function useChatComposer(personaId) {
       }));
 
     try {
-      const response = await fetch('/api/chat', {
+      const response = await fetch(`${apiBaseUrl}/api/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ persona: personaId, messages: conversation }),
