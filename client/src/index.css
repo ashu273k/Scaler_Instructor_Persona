@@ -38,3 +38,31 @@
     box-sizing: border-box;
   }
 }
+
+.chat-markdown {
+  display: grid;
+  gap: 0.5rem;
+  white-space: normal;
+}
+
+.chat-markdown p {
+  margin: 0;
+}
+
+.chat-markdown p + p {
+  margin-top: 0.5rem;
+}
+
+.chat-markdown ul,
+.chat-markdown ol {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.chat-markdown li {
+  margin-top: 0.25rem;
+}
+
+.chat-markdown strong {
+  font-weight: 600;
+}

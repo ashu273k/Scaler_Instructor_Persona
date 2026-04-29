@@ -1,3 +1,6 @@
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+
 function ChatBubble({ message, accent }) {
   const isUser = message.sender === 'user';
 
@@ -11,7 +14,13 @@ function ChatBubble({ message, accent }) {
         }`}
         style={{ '--accent': accent }}
       >
-        {message.text}
+        {isUser ? (
+          message.text
+        ) : (
+          <div className="chat-markdown">
+            <ReactMarkdown remarkPlugins={[remarkGfm]}>{message.text}</ReactMarkdown>
+          </div>
+        )}
       </div>
     </div>
   );
